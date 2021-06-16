@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fredericka+the+Great&family=Rajdhani&family=Viaoda+Libre&display=swap');
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: #ff7d45;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family: 'Mate SC', serif;
+  }
+
+  .title {
+    text-align: center;
+    color: #230738;
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .test1 {
+    margin-left: 2%;
+    margin-top: 5%;
+    background: #fff0ed;
+    width: 90%;
+    min-height: 600px;
+    height: min-content;
+    border-radius: 15px;
+    margin-bottom: 10%;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgb(0 0 0 / 75%);
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 12px solid #ff7d45;
+  }
+  
+  .score-section {
+    font-size: 24px;
+    align-items: center;
+  }
+  
+  /* QUESTION/TIMER/LEFT SECTION */
+  .question-section {
+    width: 100%;
+    position: relative;
+  }
+  
+  .question-count {
+    margin-bottom: 20px;
+  }
+  
+  .question-count span {
+    font-size: 28px;
+  }
+  
+  .question-text {
+    margin-bottom: 12px;
+    font-size: 21px;
+  }
+  
+  .timer-text {
+    background: rgb(230, 153, 12);
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(255, 189, 67);
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  /* ANSWERS/RIGHT SECTION */
+  .answer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 100%;
+    font-size: 16px;
+    height: 22%;
+    color: #ffffff;
+    background-color: #252d4a;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #234668;
+    cursor: pointer;
+  }
+  
+  .correct {
+    background-color: #2f922f;
+  }
+  
+  .incorrect {
+    background-color: #ff3333;
+  }
+  
+  button:hover {
+    background-color: #555e7d;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button svg {
+    margin-right: 5px;
+  }
+  
+
+  /* ============= quiz image ===================== */
+.quizimg{
+  margin-left: 25%;
+  margin-top: 2%;
+  width: 950px;
+  min-height: 400px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quizimg img{
+    box-shadow: 10px 10px 42px 0px rgb(0 0 0 / 75%);
+
+}
+
+/*======= result ========== */
+.score-section h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 50px;
+}
+.Result h1{
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.Result h2{
+    font-family: 'Rajdhani', sans-serif;   
+}
+
+.Result a{
+    font-size: 35px;
+}
+
+.main-title {
+    font-family: 'Crafty Girls', cursive;
+    font-size: 55px;
+    color: white;
+}
+.main-title1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+}
