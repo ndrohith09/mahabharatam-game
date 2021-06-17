@@ -1,6 +1,7 @@
 import './App.css';
 import {Route , Switch , BrowserRouter as Router } from 'react-router-dom';
 import Instructionpage from './components/Instructionpage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Quiz from './components/Quiz1';
 import Quiz2 from './components/Quiz2';
 import Level2 from './components/Level2';
