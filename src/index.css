@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root > div > a {
+    font-size: 25px;
+    background: #007bff;
+    padding: 16px;
+    border-radius: 12px;
+    color:#fff;
+    text-decoration:none;
+}
+
+#root > div > a:hover {
+   color:white;
+   font-size:28px;
+}
