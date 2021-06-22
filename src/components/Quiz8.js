@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
+import Video from './images/video8.mp4';
 import Quote1 from './images/quote1.jpg';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
@@ -7,83 +8,103 @@ export default function Quiz8 () {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'What was the name of Yudhishtira during his stay in agyaatavas',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Granthik ', isCorrect: false },
+				{ answerText: ' Vallaba     ', isCorrect: false },
+				{ answerText: 'Kank ', isCorrect: true },
+				{ answerText: 'Brihannala', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'What was the name of Draupadi during his stay in agyaatavas?',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Swaranga ', isCorrect: false },
+				{ answerText: 'Sairandhri  ', isCorrect: true  },
+				{ answerText: 'Kank', isCorrect: false },
+				{ answerText: 'Tantripal', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'What was the name of Arjuna during his stay in agyaatavas?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Brihannala   ', isCorrect: true },
+				{ answerText: 'Vallaba', isCorrect: false  },
+				{ answerText: 'Kank', isCorrect: false },
+				{ answerText: 'Tantripal', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'What was the name of Sahadeva during his stay in agyaatavas',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Granthik  ', isCorrect: false },
+				{ answerText: 'Vallaba ', isCorrect: false },
+				{ answerText: 'Kank', isCorrect: false },
+				{ answerText: 'Tantripal ', isCorrect: true },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: ' What was the name of Bhima during his stay in agyaatavas',
+			answerOptions: [
+				{ answerText: ' Granthik     ', isCorrect: true },
+				{ answerText: 'Vallaba', isCorrect: false },
+				{ answerText: 'Kank  ', isCorrect: false },
+				{ answerText: 'Tantripal', isCorrect: false },
+
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Uttara was the princess of which Kingdom?',
+			answerOptions: [
+				{ answerText: 'Maladas', isCorrect: false },
+				{ answerText: 'Chedi', isCorrect: false },
+				{ answerText: 'Matsya', isCorrect: true },
+				{ answerText: 'Magadha', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'What was the name of the hunter who mistakenly shot an arrow that ended the Krishna Avatar',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Jara', isCorrect: true },
+				{ answerText: ' Gira       ', isCorrect: false },
+				{ answerText: 'Hara', isCorrect: false },
+				{ answerText: 'Kara', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Who curse caused the death of Lord Krishna and his clan',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Kunti', isCorrect: false},
+				{ answerText: 'Gandhari', isCorrect: false },
+				{ answerText: 'Durvasa', isCorrect: false },
+				{ answerText: 'Both b and c', isCorrect: true},
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'Name Krishna’s son who abducted the daughter of Duryodhana?',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Charu  ', isCorrect: false },
+				{ answerText: 'Pradyumna', isCorrect: false  },
+				{ answerText: 'Sochu', isCorrect: false },
+				{ answerText: 'Samba', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Whom did Lord Krishna marry in process of recovering the Syamantaka Mani?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Kalindi & Satya      ', isCorrect: false },
+				{ answerText: 'Rukmini & Satyabhama     ', isCorrect: false  },
+				{ answerText: 'Satyabhama & Jambavathi  ', isCorrect:true },
+				{ answerText: 'Jambavathi & Kalindi ', isCorrect: false },
 			],
 		},
 	];
@@ -110,7 +131,9 @@ export default function Quiz8 () {
         <h1 className="main-title1">Level 8</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+        </video>
         </div>
         
 		<div className='test1'>

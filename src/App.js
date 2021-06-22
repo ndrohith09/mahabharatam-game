@@ -3,7 +3,7 @@ import {Route , Switch , BrowserRouter as Router } from 'react-router-dom';
 import Instructionpage from './components/Level1';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button , Jumbotron, Container } from 'react-bootstrap';
-import Video from './components/images/video.mp4';
+import Video from './components/images/video5.mp4';
 import Img  from './components/images/startpage.jpeg'; 
 import Quiz from './components/Quiz1';
 import Quiz2 from './components/Quiz2';
@@ -33,9 +33,10 @@ function App() {
         <Router exact path ="/">
         <div className="App">
         <div class="mid">
-             <video autoPlay loop muted>
-                <source class="embed-responsive" src={Video} type="video/mp4" />
-             </video>
+             {/* <video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mov" />
+             </video> */}
+             <img src={Img} />
          </div> 
          <h1 className="main-title">Mahabharatam</h1>
         <a href="instruction1"> Start the War</a>

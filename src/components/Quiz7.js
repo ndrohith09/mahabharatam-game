@@ -1,92 +1,113 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
 import Quote1 from './images/quote1.jpg';
+import Video from './images/video7.mp4';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
 export default function Quiz7 () {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'Who was the first commander in Chief of the Kauravas Army?',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Drona', isCorrect: false },
+				{ answerText: 'Ashvathama', isCorrect: false },
+				{ answerText: 'Karna', isCorrect: false },
+				{ answerText: 'Bheeshma', isCorrect: true },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'Who was the last commander in Chief of the Kauravas Army?',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Bheeshma', isCorrect: false },
+				{ answerText: 'Drona', isCorrect: false  },
+				{ answerText: 'Karna', isCorrect: false },
+				{ answerText: 'Ashvathama', isCorrect: true },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'Arjuna was shown the Lord’s Vishwaroopa or Dive form by?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Laxmi', isCorrect: false },
+				{ answerText: 'Lord Krishna', isCorrect: true  },
+				{ answerText: 'Lord Shiva', isCorrect: false },
+				{ answerText: 'Lord Indra', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'Who was the son of Bhima and Valandra who was the daughter of the King of Kasi?',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Sutasoma', isCorrect: false },
+				{ answerText: 'Sudharman', isCorrect: false },
+				{ answerText: 'Swaraga', isCorrect: true },
+				{ answerText: 'Ghatotkacha', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Bhima killed the demon Hidimba who was the king of demons of which forest?',
+			answerOptions: [
+				{ answerText: 'Khaandav', isCorrect: true },
+				{ answerText: 'Takshak', isCorrect: false },
+				{ answerText: 'Mandook', isCorrect: false },
+				{ answerText: 'Kamyaka', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Jarasandha was the emperor of:',
+			answerOptions: [
+				{ answerText: 'Maladas', isCorrect: false },
+				{ answerText: 'Chedi', isCorrect: false },
+				{ answerText: 'Matsya', isCorrect: false },
+				{ answerText: 'Magadha', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'What was the name of the brother of Bakasura killed by Bhima?',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Kimira', isCorrect: true },
+				{ answerText: 'Kirmada', isCorrect: false },
+				{ answerText: 'Kirmada', isCorrect: false },
+				{ answerText: 'Kampasura', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Who was the son of Arjuna and Chitrangada?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Iravan', isCorrect: false },
+				{ answerText: 'Babhruvahana', isCorrect: true },
+				{ answerText: 'Abhimanyu', isCorrect: false },
+				{ answerText: 'Srutakarma', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'Who was the son of Yudhishtira and Draupadi?',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Sutasoma', isCorrect: false },
+				{ answerText: 'Srutakarma', isCorrect: false  },
+				{ answerText: 'Satanika', isCorrect: false },
+				{ answerText: 'Prativindhya', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'What was the name of Bhima during his stay in agyaatavas?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Granthik', isCorrect: false },
+				{ answerText: 'Vallaba', isCorrect: true  },
+				{ answerText: 'Kank', isCorrect: false },
+				{ answerText: 'Tantripal', isCorrect: false },
 			],
 		},
 	];
+
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
@@ -110,7 +131,9 @@ export default function Quiz7 () {
         <h1 className="main-title1">Level 7</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+        </video>
         </div>
         
 		<div className='test1'>

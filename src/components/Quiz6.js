@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
+import Video from './images/video6.mp4';
 import Quote1 from './images/quote1.jpg';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
@@ -7,83 +8,102 @@ export default function Quiz6 () {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'Who was Karna’s charioteer in the war',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Shalya', isCorrect: true},
+				{ answerText: 'Krishna', isCorrect: false },
+				{ answerText: 'Shakuni ', isCorrect: false },
+				{ answerText: 'Satyaki ', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'In the battle field a great warrior sent the fatal arrows which period Bheeshma. Who was he?',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Krishna ', isCorrect: false },
+				{ answerText: 'Arjuna ', isCorrect: true },
+				{ answerText: 'Yudhistra ', isCorrect: false },
+				{ answerText: 'Satyaki', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'Which warrior on the Pandava side died on the first day on the war?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Abhimanyu  ', isCorrect: false },
+				{ answerText: 'Ghatotkacha', isCorrect: false  },
+				{ answerText: 'Uttar  ', isCorrect: true},
+				{ answerText: 'Yayustu', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'Who was the son of Arjuna’s grandson?',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Abhimanyu  ', isCorrect: false },
+				{ answerText: 'Uttar ', isCorrect: false },
+				{ answerText: 'Janamjaya', isCorrect: true },
+
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Along with Krishna and Arjuna who also present on Arjuna’s chariot during the war?',
+			answerOptions: [
+				{ answerText: 'Brahma', isCorrect: false },
+				{ answerText: 'Vishnu ', isCorrect: false },
+				{ answerText: 'Hanuman ', isCorrect: true},
+				{ answerText: 'Mahesh', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Book said by Lord Krishna is called as?',
+			answerOptions: [
+				{ answerText: 'Vishnu Puran', isCorrect: false },
+				{ answerText: ' Krishna Puran       ', isCorrect: false },
+				{ answerText: 'Gita', isCorrect: true },
+				{ answerText: 'Vishnu Leela', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'Who had boon to select their death?',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Duryodhana  ', isCorrect: false },
+				{ answerText: 'Bhishma ', isCorrect: true },
+				{ answerText: 'Dronacharya', isCorrect: false },
+				{ answerText: 'Karna', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Running commentary of Mahabharata War was given to Dhritrashtra by?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Ajay 	', isCorrect: false },
+				{ answerText: 'Vidur', isCorrect: false },
+				{ answerText: 'Sanjay ', isCorrect: true },
+				{ answerText: 'Shakuni', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'Who was fighting against the Pandavas in the war?',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Virat', isCorrect: false },
+				{ answerText: 'Drupad  ', isCorrect: false  },
+				{ answerText: 'Drishtadyumna', isCorrect: false },
+				{ answerText: 'Drona  ', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Who was the Maharathi in Pandavas?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Shikandini', isCorrect: false },
+				{ answerText: 'Virat ', isCorrect: true },
+				{ answerText: 'Shakuni  ', isCorrect: false },
+				{ answerText: 'Drishtaketu', isCorrect: false },
 			],
 		},
 	];
@@ -110,7 +130,9 @@ export default function Quiz6 () {
         <h1 className="main-title1">Level 6</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+        </video>
         </div>
         
 		<div className='test1'>

@@ -1,89 +1,107 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
-import Quote1 from './images/quote1.jpg';
+import Video from './images/video3.mp4';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
 export default function Quiz3() {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'Janamejaya was the son of?',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Karna', isCorrect: false },
+				{ answerText: 'Parikshit', isCorrect: true },
+				{ answerText: 'Kritverna', isCorrect: false },
+				{ answerText: 'Abhimanyu', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'Shikandi is the son of?',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Drupada', isCorrect: true },
+				{ answerText: 'Pandu', isCorrect: false },
+				{ answerText: 'Puru', isCorrect: false },
+				{ answerText: 'Vrihanta', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'Younger son of Satyavati was?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Bhishma', isCorrect: false },
+				{ answerText: 'Chitrvirya', isCorrect: false },
+				{ answerText: 'Vichitraveerya', isCorrect: true }
+
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'Vikarna was the son of?',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Radhey', isCorrect: false },
+				{ answerText: 'Gandhari', isCorrect: true },
+				{ answerText: 'Druapdhi', isCorrect: false },
+				{ answerText: 'Karna', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'Who is the consort of Lord Balarama?',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Indumati', isCorrect: false },
+				{ answerText: 'Nahusha', isCorrect: false },
+				{ answerText: 'Revati', isCorrect: true },
+				{ answerText: 'Manasa', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Which is not an another name of Bhishma?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Gauranga', isCorrect: false },
+				{ answerText: 'Saptu-Vasu', isCorrect: true },
+				{ answerText: 'Mahamahima', isCorrect: false },
+				{ answerText: 'Shevataveera', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'Great hero who lived a life such a way that today he is another name for generosity and loyality?',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Bhishma', isCorrect: false },
+				{ answerText: 'Sahadeva', isCorrect: false  },
+				{ answerText: 'Arjuna', isCorrect: false },
+				{ answerText: 'Karna', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Who amoung the given was not the Kunti’s daughter-in-law?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Uttara', isCorrect: true },
+				{ answerText: 'Ulupi', isCorrect: false  },
+				{ answerText: 'Hidmbi', isCorrect: false },
+				{ answerText: 'Chirangadha', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Who was the son of Bhima and Hidimba?',
+			answerOptions: [
+				{ answerText: 'Barbarik', isCorrect: false },
+				{ answerText: 'Ghatotkacha', isCorrect: true  },
+				{ answerText: 'Abhimanyu', isCorrect: false },
+
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Kunti’s son Karna also known with this name?',
+			answerOptions: [
+				{ answerText: 'Kunthey', isCorrect: false },
+				{ answerText: 'Radhey', isCorrect: true  },
+				{ answerText: 'Kaurav', isCorrect: false },
 			],
 		},
 	];
@@ -110,7 +128,9 @@ export default function Quiz3() {
         <h1 className="main-title1">Level 3</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+             </video>
         </div>
         
 		<div className='test1'>

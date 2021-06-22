@@ -1,89 +1,107 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
-import Quote1 from './images/quote1.jpg';
+import Video from './images/video2.mp4';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
 export default function Quiz2() {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'In all, how many sons or daughters did Kunti give birth to?',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: '4', isCorrect: true },
+				{ answerText: '3', isCorrect: false },
+				{ answerText: '5', isCorrect: false },
+				
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'Who was the blind king?',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Pandu', isCorrect: false },
+				{ answerText: 'Bhishma', isCorrect: false },
+				{ answerText: 'Dhritarashtra', isCorrect: true },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'What does the word Bheeshma mean?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'A Horrible man ', isCorrect: false },
+				{ answerText: 'A Great Warrior    ', isCorrect: false },
+				{ answerText: 'A man of a terrible oath', isCorrect: true },
+				
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'What were the names of the ornaments given to Karna by the Sun God?',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Shastras', isCorrect: false },
+				{ answerText: 'Danur Bana', isCorrect: false },
+				{ answerText: 'Kavacha & Kundala', isCorrect: true },
+
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'What were the names of Bheeshmas step brothers?',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Pandu', isCorrect: false },
+				{ answerText: 'Chitrangada', isCorrect: false },
+				{ answerText: 'Vichitraveerya', isCorrect: false },
+				{ answerText: 'Both b & c', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Whom did Duryodhana trick into joining his side before the war?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Drupada', isCorrect: false },
+				{ answerText: 'Shalya', isCorrect: true },
+				{ answerText: 'Ashwatthama', isCorrect: false },
+
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'Who abducted Draupadi when Pandavas were in exile?',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Jarasandh', isCorrect: false },
+				{ answerText: 'Jayadrath', isCorrect: true  },
+				{ answerText: 'Hidimba', isCorrect: false },
+				{ answerText: 'Yaksha', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Who was Laxman in Mahabharata?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Son of Duryodhana', isCorrect: true },
+				{ answerText: 'Son of Dushasana', isCorrect: false  },
+				{ answerText: 'Son of Abhimanyu', isCorrect: false },
+	
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Who was the fourth avatar of Bramha?',
+			answerOptions: [
+				{ answerText: 'Dhronacharya', isCorrect: false },
+				{ answerText: 'Kripacharya', isCorrect: true  },
+				{ answerText: 'Durvasa', isCorrect: false },
+				{ answerText: 'Vidura', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'At what age Arjuna died?',
+			answerOptions: [
+				{ answerText: '115 years 06 months', isCorrect: false },
+				{ answerText: '125 years 02 months', isCorrect: true  },
+				{ answerText: '133 years 05 months', isCorrect: false },
+	
 			],
 		},
 	];
@@ -110,7 +128,9 @@ export default function Quiz2() {
         <h1 className="main-title1">Level 2</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+             </video>
         </div>
         
 		<div className='test1'>

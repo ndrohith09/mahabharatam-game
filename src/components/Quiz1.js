@@ -3,87 +3,97 @@ import './styles/Quiz.css';
 import Quote1 from './images/quote1.jpg';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
+import Video from '../components/images/video1.mp4';
 export default function Quiz() {
 	const questions = [
 		{   
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+            
+			questionText: 'Who gave Bhishma the boon that he would die only when he wished?',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
-			],
-		},
-		{
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
-			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
 				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Surya dev', isCorrect: false },
+				{ answerText: 'Shantana', isCorrect: true },
 			],
 		},
 		{
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+            
+			questionText: 'Who was the daughter of Dhritarashtra?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Drupadi', isCorrect: false },
+				{ answerText: 'Dushala', isCorrect: true },
+				{ answerText: 'Shikandi', isCorrect: false },
 			],
 		},
 		{
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+            
+			questionText: 'Let us start off with a straightforward one. The Great War lasted for _____ days of fighting.',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: '13', isCorrect: false },
+				{ answerText: '16', isCorrect: false },
+				{ answerText: '18', isCorrect: true },
+			],
+		},
+		{
+            
+			questionText: 'Who was King Santunus first wife?',
+			answerOptions: [
+				{ answerText: 'Arundathi   ', isCorrect: false },
+				{ answerText: 'Ambika', isCorrect: false },
+				{ answerText: 'Ganga', isCorrect: true },
 			],
 		},
         {
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+            
+			questionText: 'Who recited the Mahabharata?',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Lord Ganesha', isCorrect: false },
+				{ answerText: 'Veda Vyasa', isCorrect: true },
+				{ answerText: 'Vishwamitra', isCorrect: false },
 			],
 		},
         {
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+            
+			questionText: 'What were the names of Karnas foster parents?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Adhiratha & Radha', isCorrect: true },
+				{ answerText: 'Kunthi & Pandu', isCorrect: false },
+				{ answerText: 'Dhritharashtra & Gandhari', isCorrect: false },
 			],
 		},
         {
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+            
+			questionText: "What was Bheeshma's name when he was a young lad?",
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Devavrata', isCorrect: true },
+				{ answerText: 'Yudhishtira', isCorrect: false  },
+				{ answerText: 'Parasurama', isCorrect: false },
 			],
 		},
         {
-            questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+            
+			questionText: 'Duryodhana and Arjuna both approached Krishna for help before the war began. Arjuna asked for Krishna himself to aid him. What did Duryodhana ask for?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Akshohinis', isCorrect: false },
+				{ answerText: 'Chariots', isCorrect: false  },
+				{ answerText: 'Narayani Sena ', isCorrect: true },
+			],
+		},
+		{
+            
+			questionText: 'What "Guru-Dakshina" did Drona ask from Ekalavya?',
+			answerOptions: [
+				{ answerText: 'Kingdom', isCorrect: false },
+				{ answerText: 'Right thumb', isCorrect: true  },
+				{ answerText: 'Left thumb ', isCorrect: false },
+			],
+		},
+		{
+            
+			questionText: 'Who killed Dushasana?',
+			answerOptions: [
+				{ answerText: 'Arjuna', isCorrect: false },
+				{ answerText: 'Sahadeva', isCorrect: false  },
+				{ answerText: 'Bheema ', isCorrect: true },
 			],
 		},
 	];
@@ -110,7 +120,9 @@ export default function Quiz() {
         <h1 className="main-title1">Level 1</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+             </video>
         </div>
         
 		<div className='test1'>

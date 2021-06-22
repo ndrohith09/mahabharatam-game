@@ -1,89 +1,110 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
 import Quote1 from './images/quote1.jpg';
+import Video from './images/video4.mp4';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
 export default function Quiz4 () {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'Who was Bhishma’s mother',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Saraswati', isCorrect: false },
+				{ answerText: 'Laxmi  ', isCorrect: false },
+				{ answerText: 'Ganga ', isCorrect: true },
+				{ answerText: 'Satyawati', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'How many times did King Pandu get married',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Once  ', isCorrect: false },
+				{ answerText: 'Twice', isCorrect: true },
+				{ answerText: 'Thrice ', isCorrect: false },
+				{ answerText: 'None of these', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'Which is another name of Mahabharata',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Aranya Sanhar ', isCorrect: false },
+				{ answerText: ' Shat Sahasra Samhita ', isCorrect: true },
+				{ answerText: 'Krishnavatar ', isCorrect: false },
+				{ answerText: 'Kuru Samhita', isCorrect: false },
+				
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'In modern India, Kurukshetra was located at?',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Punjab', isCorrect: false },
+				{ answerText: 'Haryana ', isCorrect: true},
+				{ answerText: 'Himachal Pradesh   ', isCorrect: false },
+				{ answerText: 'Uttar Pradesh', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'Who has penned down Mahabharata',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Lord Ganesha  ', isCorrect: true },
+				{ answerText: 'Tulasidas', isCorrect: false },
+				{ answerText: 'Valmiki   ', isCorrect: false },
+				{ answerText: 'Vyas', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Name the rishi who cursed Pandu?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Vyasa ', isCorrect:false},
+				{ answerText: 'Valmiki ', isCorrect: false },
+				{ answerText: 'Kindam', isCorrect: true },
+				{ answerText: 'Durvasa', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'What was the name of the kingdom developed by the Pandavas',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Dwaraka', isCorrect: false },
+				{ answerText: 'Avanti  ', isCorrect: false  },
+				{ answerText: 'Indraprastha', isCorrect: true},
+				{ answerText: 'Hasthinapur', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Who vowed to kill Bhishma in her next birth?',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Ambika', isCorrect: false },
+				{ answerText: 'Shikandi  ', isCorrect: false  },
+				{ answerText: 'Amba ', isCorrect: true },
+				{ answerText: 'Ambalika', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'At the time of Duryodhana birth, in the voice of which animal did he cry',
+			answerOptions: [
+				{ answerText: 'Ass ', isCorrect: true },
+				{ answerText: 'Dog  ', isCorrect: false  },
+				{ answerText: 'Wolf  ', isCorrect: false },
+				{ answerText: 'Lion', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: '.Who killed Eravan, the son of Arjuna and Ulupi?',
+			answerOptions: [
+				{ answerText: 'Abhimanyu ', isCorrect: false },
+				{ answerText: 'Alambusha   ', isCorrect: true  },
+				{ answerText: 'Chitrangada', isCorrect: false },
+
 			],
 		},
 	];
@@ -110,7 +131,9 @@ export default function Quiz4 () {
         <h1 className="main-title1">Level 4</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+        </video>
         </div>
         
 		<div className='test1'>

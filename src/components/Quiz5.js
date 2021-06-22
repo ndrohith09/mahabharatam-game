@@ -1,64 +1,62 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
 import Quote1 from './images/quote1.jpg';
+import Video from './images/video5.mp4';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
 export default function Quiz4 () {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'Where did Dronacharya go when he was insulted by Drupada',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Gandharava', isCorrect: false },
+				{ answerText: 'Madra  ', isCorrect: false },
+				{ answerText: 'Hasthinapura ', isCorrect:true},
+				{ answerText: 'Sindhu', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'Karna learnt archey from a venerable sage by pretending to be a Bramhin. Who was this sage',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Bhishma ', isCorrect: false },
+				{ answerText: 'Dronacharya', isCorrect: false },
+				{ answerText: 'Parashurama ', isCorrect: true },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'Friendship in the Mahabharata was defined by ',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: 'Duryodhana-Karna', isCorrect:true },
+				{ answerText: 'Arjuna-Krishna', isCorrect: false },
+				{ answerText: 'Kunti-Gandhari     ', isCorrect: false },
+				{ answerText: 'Draupadi-Subhadra', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'When king Vichitraveerya died, when finally gave an heir to the Kuru Clan',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Veda Vyasa ', isCorrect: true},
+				{ answerText: 'Durvasa', isCorrect: false },
+				{ answerText: 'Valmiki  ', isCorrect: false },
+				{ answerText: 'Vishwamitra', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'Who killed Dhrishtadyumna',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Duryodhana   ', isCorrect: false },
+				{ answerText: 'Dushasana ', isCorrect: false },
+				{ answerText: 'Ashwatthama', isCorrect: true },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'What was the name of Ekalavya’s father',
 			answerOptions: [
 				{ answerText: '2nd century CE', isCorrect: true },
 				{ answerText: '15th century CE', isCorrect: false },
@@ -68,22 +66,41 @@ export default function Quiz4 () {
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'As Karna walked away dejectedly after being cursed by Parashurama he killed an animal. What was it',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Dog', isCorrect: false },
+				{ answerText: 'Cow  ', isCorrect: true  },
+				{ answerText: 'Wolf', isCorrect: false },
+				{ answerText: 'Tiger', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Name the venerable sage who fought Bheeshma',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Karna  ', isCorrect: false },
+				{ answerText: 'Parashurama ', isCorrect: true  },
+				{ answerText: 'Krishna', isCorrect: false },
+				{ answerText: 'Mahadev', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'The ‘House of Lac’ by whom',
+			answerOptions: [
+				{ answerText: 'Vyasa', isCorrect: false },
+				{ answerText: 'Purochana', isCorrect: true },
+				{ answerText: 'Devavratha', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Who did Duryodhana crown as “King of Anga”?',
+			answerOptions: [
+				{ answerText: 'Dushasana   ', isCorrect: false },
+				{ answerText: 'Karna    ', isCorrect: true  },
+				{ answerText: 'Arjuna', isCorrect: false },
+				{ answerText: 'Shalya', isCorrect: false },
 			],
 		},
 	];
@@ -110,7 +127,9 @@ export default function Quiz4 () {
         <h1 className="main-title1">Level 4</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+        </video>
         </div>
         
 		<div className='test1'>

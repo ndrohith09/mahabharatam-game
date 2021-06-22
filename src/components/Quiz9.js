@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/Quiz.css';
+import Video from './images/video9.mp4';
 import Quote1 from './images/quote1.jpg';
 import { FcCloseUpMode , FcRating ,FcAdvance } from 'react-icons/fc';
 import { GrDiamond } from 'react-icons/gr';
@@ -7,86 +8,106 @@ export default function Quiz9 () {
 	const questions = [
 		{   
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'First where is the Mahabodhi temple located at',
+			questionText: 'Name the daughter of Bhishmaka who was married to Lord Krishna',
 			answerOptions: [
-				{ answerText: 'Prayaga', isCorrect: false },
-				{ answerText: 'Varanasi', isCorrect: false },
-				{ answerText: 'Gaya', isCorrect: false },
-				{ answerText: 'Bodh Gaya', isCorrect: true },
+				{ answerText: 'Tulsi      ', isCorrect: false },
+				{ answerText: 'Rukmini', isCorrect: true },
+				{ answerText: 'Kalindi', isCorrect: false },
+				{ answerText: 'Satya ', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Name the lord who is worshipped in Maha bodhi temple',
+			questionText: 'Who was the brother of Rukmini',
 			answerOptions: [
-				{ answerText: 'Lord Venkateswara', isCorrect: false },
-				{ answerText: 'Lord Rama', isCorrect: false },
-				{ answerText: 'Lord Buddha', isCorrect: true },
-				{ answerText: 'Lord Krishna', isCorrect: false },
+				{ answerText: 'Jayadrath  ', isCorrect: false},
+				{ answerText: 'Rukmi', isCorrect: true  },
+				{ answerText: 'Bheeshma  ', isCorrect: false },
+				{ answerText: ' Jarasandh', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'People of which religion come to worship at the Maha bodhi Temple',
+			questionText: 'In Kurukshetra War, How many warriors each elephant could carry along with their weapons?',
 			answerOptions: [
-				{ answerText: 'Buddhists', isCorrect: false },
-				{ answerText: 'Hindus', isCorrect: false },
-				{ answerText: 'Christians', isCorrect: false },
-				{ answerText: 'Muslims', isCorrect: false },
-				{ answerText: 'Both Hindus and Buddhists', isCorrect: true },
+				{ answerText: '10 ', isCorrect: false },
+				{ answerText: '7', isCorrect: true  },
+				{ answerText: '8', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
 			],
 		},
 		{
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Which qualities have Lord buddha attained by meditating under the Maha bodhi tree',
+			questionText: 'Who vowed to kill the evil Dushasana and drink his blood when he molested Draupadi?',
 			answerOptions: [
-				{ answerText: 'Super Powers', isCorrect: false },
-				{ answerText: 'Anger and Rage', isCorrect: false },
-				{ answerText: 'Pride and Negligence', isCorrect: false },
-				{ answerText: 'Wisdom and Enlightenment', isCorrect: true },
+				{ answerText: 'Bhima ', isCorrect: true },
+				{ answerText: 'Arjuna  ', isCorrect: false },
+				{ answerText: 'Nakul ', isCorrect: false},
+				{ answerText: 'Sahadeva ', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Which Apsara wanted to marry Arjuna when he was in Indraloka',
+			answerOptions: [
+				{ answerText: 'Urvashi', isCorrect: true },
+				{ answerText: 'Menaka ', isCorrect: false },
+				{ answerText: 'Rambha  ', isCorrect: false },
+				{ answerText: 'Tilottama', isCorrect: false },
+			],
+		},
+		{
+            questiontitle: 'Mahabodhi Temple, Bihar',
+			questionText: 'Who was Bhishmaka?',
+			answerOptions: [
+				{ answerText: 'Krishna’s father-in-law      ', isCorrect: true },
+				{ answerText: 'Jayadratha’s father-in-law    ', isCorrect: false },
+				{ answerText: 'Duryodhana’s father-in-law ', isCorrect: false },
+				{ answerText: 'Arjuna’s father-in-law', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'Towards which side is the Mahabodhi Temple constructed with respect to the Mahabodhi Tree',
+			questionText: 'Who cursed Arjuna that he would have to spend a part of his life as a Eunch?',
 			answerOptions: [
-				{ answerText: 'North', isCorrect: false },
-				{ answerText: 'South', isCorrect: false },
-				{ answerText: 'East', isCorrect: true },
-				{ answerText: 'West', isCorrect: false },
+				{ answerText: 'Urvashi ', isCorrect: true },
+				{ answerText: 'Menaka', isCorrect: false },
+				{ answerText: 'Rambha  ', isCorrect: false },
+				{ answerText: 'Tilottama', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'What is the believed time of construction of the main temple',
+			questionText: 'Who promised his teacher to fight from the weaker side?',
 			answerOptions: [
-				{ answerText: '2nd century CE', isCorrect: true },
-				{ answerText: '15th century CE', isCorrect: false },
-				{ answerText: '18th century CE', isCorrect: false },
-				{ answerText: '8th century CE', isCorrect: false },
+				{ answerText: 'Bheeshma    ', isCorrect: false },
+				{ answerText: 'Jarasandh ', isCorrect: false },
+				{ answerText: 'Barbareek ', isCorrect: true },
+				{ answerText: 'Jayadrath', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: 'When did the major restorations took place at the Maha bodhi temple took place?',
+			questionText: 'Who died in Chakravyuh? ',
 			answerOptions: [
-				{ answerText: '16th century', isCorrect: false },
-				{ answerText: '19th century', isCorrect: true  },
-				{ answerText: '15th century', isCorrect: false },
-				{ answerText: '18th century', isCorrect: false },
+				{ answerText: 'Barbareek ', isCorrect: false },
+				{ answerText: 'Abhimanyu', isCorrect: true  },
+				{ answerText: 'Arjun ', isCorrect: false },
+				{ answerText: 'Ghatotkach', isCorrect: false },
 			],
 		},
         {
             questiontitle: 'Mahabodhi Temple, Bihar',
-			questionText: '.During which empire did lord buddha attained his Enlightenment?',
+			questionText: 'Karna was born by the blessings of:',
 			answerOptions: [
-				{ answerText: 'The Mauryan Empire', isCorrect: true },
-				{ answerText: 'The Kakatiya Empire', isCorrect: false  },
-				{ answerText: 'The Vijayanagara Empire', isCorrect: false },
-				{ answerText: 'The Mughal empire', isCorrect: false },
+				{ answerText: 'Lord Fire ', isCorrect: false},
+				{ answerText: 'Lord Brahm', isCorrect: false  },
+				{ answerText: 'Lord Sun    ', isCorrect: true },
+				{ answerText: 'Lord Shiva', isCorrect: false },
 			],
 		},
 	];
+
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
@@ -110,7 +131,9 @@ export default function Quiz9 () {
         <h1 className="main-title1">Level 9</h1>
 
         <div className="quizimg">
-            <img src={Quote1} alt="image" />
+		<video autoPlay loop muted>
+                <source class="embed-responsive" src={Video} type="video/mp4" />
+        </video>
         </div>
         
 		<div className='test1'>
